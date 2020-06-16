@@ -1,0 +1,68 @@
+@charset "UTF-8";
+/**
+ *
+ * @author      Zoey Huang
+ * @date        2020-06-04 13:58:30
+ * @description university.html的样式
+ */
+
+ /***************************导航样式开始*************************/
+ #second{
+ 	width: 8%;                 /*设置宽度*/
+   display: block;            /*默认显示*/
+   background-color: #3dc3b1; /*背景颜色*/
+   border-radius: 10px;       /*设置边框为圆角矩形*/
+   text-align: center;        /*字体居中对齐*/
+   /*绝对定位*/
+   top: 35%;
+   left: 20%;
+ }
+ #second h4{
+ 	font-weight: bolder; /*字体设置为很粗*/
+ }
+
+ #second ul li:hover{
+ 	background-color: transparent; /*鼠标滑过时无背景颜色*/
+ }
+ /***************************导航样式开始*************************/
+
+ /*************************主体内容样式开始************************/
+ #university{
+ 	width: 80%;     /*设置宽度*/
+ 	padding: 0 10%; /*padding值由width值决定，是为了让背景颜色充满屏幕*/
+ }
+  /*标题样式*/
+ #university .university-title div{
+   width: 41%;
+ }
+ /*内容样式*/
+ #university .university-content{
+ 	width: 100%;
+ 	height: 85%;
+ 	padding: 10px 0;
+ }
+ #university .university-content .two,
+ #university .university-content .three{
+  /*最开始默认显示大的时间轴*/
+ 	display: none;
+ }
+ #university .university-content ul li{
+  background: url(../../img/about/line.png) repeat-y 500px; /*显示中轴线*/
+  padding-bottom: 40px;
+  padding-left: 389px;
+  /*felx布局，顶部对齐*/
+  display: flex;
+  align-items: flex-start;
+}
+#university .university-content ul li h4{
+  background: url(../../img/about/mark.png) no-repeat 104px; /*显示标记点*/
+  text-align: right;
+  padding-right: 40px;
+  color: #299d90;
+  font-weight: bold;
+}
+#university .university-content ul li p{
+  font-size: 18px;
+  padding-left: 15px;
+}
+/*************************主体内容样式结束************************/

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<!-- 网站标题 -->
+	<title>幸会 - 黄栩的个人网站</title>
+	<!-- 网站logo -->
+	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+	<!-- 引入css -->
+	<!-- 通用css -->
+	<link href="css/universal.css" rel="stylesheet">
+	<!-- 本页面css -->
+	<link href="css/index.css" rel="stylesheet">
+</head>
+
+<body>
+	<!-- 页眉区 -->
+	<header>
+		<!-- 考虑到主页的颜色构成，页眉区由左右两部分组成，有不同的背景颜色 -->
+		<div class="left">
+			<!-- 左侧有菜单栏按钮和网站标题 -->
+			<img src="img/nav.png" alt="菜单按钮">
+			<h1>幸会</h1>
+		</div>
+		<!-- 右侧只用来着色，没有具体内容 -->
+		<div class="right"></div>
+	</header>
+	<!-- 页眉区结束 -->
+
+	<!-- 导航区，由li标签构成，导航区可以下拉或收起，通过点击页眉区的菜单栏按钮实现 -->
+	<nav>
+		<ul>
+			<!-- 一级导航 -->
+			<li class="first">
+				<a href="about/main.html">
+					<span>关于我</span>
+				</a>
+				<!-- 二级导航 -->
+				<li class="second">
+					<a href="about/interest.html">兴趣爱好</a>
+				</li>
+				<li class="second">
+					<a href="about/skill.html">专业技能</a>
+				</li>
+				<li class="second">
+					<a href="about/university.html">我的大学</a>
+				</li>
+			</li>
+			<li class="first">
+				<a href="know/myself.html">
+					<span>认识我</span>
+				</a>
+			</li>
+			<li class="first">
+				<a href="contact/contact.html">
+					<span>联系我</span>
+				</a>
+			</li>
+		</ul>
+	</nav>
+	<!-- 导航区结束 -->
+
+	<!-- 主体内容区，由三个不同颜色的区域组成 -->
+	<div id="content">
+		<!-- 可以直接点击区域访问，所以使用a标签 -->
+		<a href="about/main.html" id="about-me">
+			<img src="img/about_me.png" alt="关于我">
+		</a>
+		<a href="contact/contact.html" id="contact-me">
+			<img src="img/contact_me.png" alt="联系我">
+		</a>
+		<a href="know/myself.html" id="know-me">
+			<img src="img/know_me.png" alt="了解我">
+		</a>
+	</div>
+	<!-- 主体内容区结束 -->
+
+	<!-- 页脚区，书写版权信息等 -->
+	<footer>
+		<!-- 考虑到主页的颜色构成，页尾区也由左右两部分组成，有不同的背景颜色 -->
+		<div class="left">
+			<span>@Copyright 2020 Zoey Huang. All Rights Reserved.</span>
+		</div>
+		<div class="right"></div>
+	</footer>
+	<!-- 页脚区结束 -->
+
+	<!-- 引入js，实现导航栏的展开与收起 -->
+	<script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>

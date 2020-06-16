@@ -1,0 +1,87 @@
+@charset "UTF-8";
+/**
+ *
+ * @author      Zoey Huang
+ * @date        2020-06-04 13:13:57
+ * @description index.html的样式
+ */
+
+ /*************************页眉页脚样式开始*************************/
+ header,footer{
+ 	display: flex; /*使用flex布局*/
+ 	flex-flow: row nowrap; /*让元素横向排列，并且不换行*/
+ }
+ .left,.right{
+ 	height: 100%; /*占满父元素*/
+ }
+ /*左右区域的宽度、背景颜色都与主体内容区里的区域宽度、背景颜色一致*/
+ .left{
+ 	width: 65%;
+ 	background-color: #9bd3b2;
+ }
+ .right{
+ 	width: 35%;
+ 	background-color: #ffbeba;
+ }
+ footer .right{
+ 	background-color: #f9da94;
+ }
+ /*************************页眉页脚样式结束*************************/
+
+ /*************************主体内容样式开始*************************/
+ #content{
+ 	display: flex; 					/*采用flex布局*/
+ 	flex-flow: column wrap; /*元素纵向排列，并且换行*/
+ 	height: 85%; 						/*高度为除去页眉页脚后的全部高度*/
+ 	width: 100%; 						/*宽度占满*/
+ }
+ #content a{
+ 	position: relative; 					/*以实现子元素的绝对定位*/
+ 	transition: all 0.6s linear;  /*缩放的过度效果*/
+ }
+ #content a:hover{
+ 	transform: scale(1.04); /*鼠标滑过时放大*/
+ 	z-index: 999; 					/*选择的区域显示在最上方*/
+ }
+ #content a img{
+ 	width: 80%;						/*设置图片大小*/
+ 	position: absolute; 	/*绝对定位*/
+ }
+ /*区域1样式*/
+ #about-me{
+ 	background-color: #9bd3b2; /*背景颜色*/
+ 	width: 65%; 							 /*宽度*/
+ 	height: 100%; 						 /*高度设置为100%，实现换行的效果*/
+ }
+ #about-me img{
+ 	/*定位图片位置*/
+ 	bottom: 8%;
+ 	right: 0;
+ }
+ /*区域1样式结束*/
+
+ /*区域2样式*/
+ #contact-me{
+ 	background-color: #ffbeba; /*背景颜色*/
+ 	width: 35%;							   /*宽度*/
+ 	height: 40%;               /*高度*/
+ }
+ #contact-me img{
+ 	/*定位图片位置*/
+ 	bottom: 0;
+ }
+ /*区域2样式结束*/
+
+ /*区域3样式开始*/
+ #know-me{
+ 	background-color: #f9da94; /*背景颜色*/
+ 	width: 35%;								 /*宽度与区域2一致*/
+ 	height: 60%;               /*高度与区域2高度之和为100%,占满父元素*/
+ }
+ #know-me img{
+ 	/*定位图片位置*/
+ 	bottom: 0;
+ 	left: 2%;
+ }
+ /*区域3样式结束*/
+ /*************************主体内容样式结束*************************/

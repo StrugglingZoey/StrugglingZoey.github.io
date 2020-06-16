@@ -1,0 +1,43 @@
+@charset "UTF-8";
+/**
+ * 
+ * @author      Zoey Huang
+ * @date    2020-06-04 13:59:12
+ * @description main.html的样式
+ */
+
+ /*************************主体内容样式开始*************************/
+ #main{
+ 	width: 80%;			/*设置宽度*/
+ 	padding: 0 10%;	/*padding值由width值决定，是为了让背景颜色充满屏幕*/
+ }
+ /*标题样式*/
+ #main .main-title div{
+ 	width: 40%;
+ }
+
+ /*内容样式*/
+ #main .main-content{
+ 	width: 100%;
+ }
+ #main .main-content table{
+ 	margin: 60px 0 0 20px;
+ 	border: 0;          /*默认不显示边框*/
+ 	text-align: center;	/*内容居中对齐*/
+ }
+ #main .main-content table .center{
+ 	/*用边框分隔内容*/
+ 	border-left: 1px dashed #3dc3b1;
+ 	border-right: 1px dashed #3dc3b1;
+ }
+ #main .main-content table td h3{
+ 	padding: 15px 0;
+ }
+ #main .main-content table td img{
+ 	height: 320px;
+ 	transition: all 0.2s linear; /*缩放的过度效果*/
+ }
+ #main .main-content table td img:hover{
+ 	transform: scale(1.07); /*鼠标滑过时图片放大*/
+ }
+/*************************主体内容样式结束*************************/

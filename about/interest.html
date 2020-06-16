@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <!-- 网站标题 -->
+	<title>幸会 - 黄栩的个人网站</title>
+	<!-- 网站logo -->
+	<link rel="shortcut icon" type="image/x-icon" href="../img/favicon.ico">
+  <!-- 引入css -->
+  <!-- 通用css -->
+	<link href="../css/universal.css" rel="stylesheet">
+  <!-- 本页面css -->
+	<link href="../css/about/interest.css" rel="stylesheet">
+</head>
+<body>
+  <!-- 页眉区 -->
+	<header class="about">
+    <!-- 菜单栏按钮 -->
+    <img src="../img/nav.png" alt="菜单按钮">
+    <!-- 网页标题 -->
+    <h1>幸会</h1>
+  </header>
+  <!-- 页眉区结束 -->
+
+  <!-- 导航区，由li标签构成，导航区可以下拉或收起，通过点击页眉区的菜单栏按钮实现 -->
+  <nav>
+    <ul>
+      <!-- 一级导航 -->
+      <li class="first">
+        <a href="../index.html">
+          <span>首页</span>
+        </a>
+      </li>
+      <li class="first">
+        <a href="./main.html">
+          <span>关于我</span>
+        </a>
+        <!-- 二级导航 -->
+        <li class="second chosen">
+          <a href="#">兴趣爱好</a>
+        </li>
+        <li class="second">
+          <a href="./skill.html">专业技能</a>
+        </li>
+        <li class="second">
+          <a href="./university.html">我的大学</a>
+        </li>
+      </li>
+      <li class="first">
+        <a href="../know/myself.html">
+          <span>认识我</span>
+        </a>
+      </li>
+      <li class="first">
+        <a href="../contact/contact.html">
+          <span>联系我</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <!-- 导航区结束 -->
+
+  <!-- 主体内容区，由标题和内容两部分组成，居中 -->
+  <div id="interest" class="about main">
+    <!-- 标题部分 -->
+  	<section class="interest-title title">
+      <!-- 两个空div是为了显示标题两侧的线条 -->
+      <div></div>
+      <!-- 标题图标 -->
+      <img src="../img/about/interest.png" alt="interest">
+      <!-- 标题 -->
+      <h2>兴趣爱好</h2>
+      <div></div>
+    </section>
+    <!-- 标题部分结束 -->
+    <!-- 内容部分，由五个div组成，每个div代表一项兴趣爱好 -->
+    <section class="interest-content">
+      <div>
+        <!-- 图片 -->
+        <img src="../img/about/reading.jpg" alt="reading">
+        <!-- 爱好 -->
+        <h3>读书</h3>
+        <!-- 爱好描述 -->
+        <p>什么都愿意看一些，最爱王小波和狄更斯</p>
+      </div>
+      <div>
+        <img src="../img/about/ukulele.jpg" alt="ukulele">
+        <h3>尤克里里</h3>
+        <p>放假在家get的新技能</p>
+      </div>
+      <div>
+        <img src="../img/about/movie.jpg" alt="movie">
+        <h3>电影</h3>
+        <p><q>不看电影会死</q>星人，偏爱科幻和悬疑</p>
+      </div>
+      <div>
+        <img src="../img/about/food.jpg" alt="food">
+        <h3>美食</h3>
+        <p>唯有美食与爱不可辜负</p>
+      </div>
+      <div>
+        <img src="../img/about/traveling.jpg" alt="traveling">
+        <h3>旅行</h3>
+        <p>去哪里不重要，重要的是去啊</p>
+      </div>
+    </section>
+    <!-- 内容部分结束 -->
+  </div>
+  <!-- 主体内容区结束 -->
+
+  <!-- 页脚区，书写版权信息等 -->
+  <footer class="about">
+    <span>@Copyright 2020 Zoey Huang. All Rights Reserved.</span>
+	</footer>
+  <!-- 页脚区结束 -->
+
+  <!-- 引入js，实现导航栏的展开与收起 -->
+  <script type="text/javascript" src="../js/nav.js"></script>
+
+</body>
+</html>

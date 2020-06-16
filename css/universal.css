@@ -1,0 +1,147 @@
+@charset "UTF-8";
+/**
+ *
+ * @author      Zoey Huang
+ * @date        2020-06-04 10:14:09
+ * @description 所有页面的通用样式
+ */
+
+ /*************************基本通用样式开始*************************/
+ *{
+ 	/*去除边缘空白*/
+ 	margin: 0;
+ 	padding: 0;
+ }
+ @font-face {
+ 	/*引入字体*/
+ 	font-family: 华康娃娃体;
+ 	src: url("../font/123_1.TTF");
+ }
+ html,body{
+ 	/*宽度与高度占满*/
+ 	width: 100%;
+ 	height: 100%;
+ }
+ body{
+ 	font-family: 华康娃娃体; /*设置默认字体*/
+ 	color: #fff;						/*默认字体颜色为白色*/
+ 	min-width: 1150px;			/*设置页面最小宽度*/
+ 	min-height: 600px;			/*设置页面最小高度*/
+ }
+ span,li,a,p{
+ 	color: #fff;						/*设置标签字体颜色为白色*/
+ }
+ span{
+ 	font-size: 18px;				/*设置默认字体大小*/
+ }
+ a{
+ 	text-decoration: none;  /*去除a标签的下划线*/
+ }
+ ul,li{
+ 	list-style: none;       /*去除li标签的排序标记*/
+ 	font-size: 20px;				/*设置默认字体大小*/
+ }
+ h2{
+ 	font-size: 28px;
+ }
+ h3{
+ 	font-size: 24px;
+ }
+ h4{
+ 	font-size: 20px;
+ }
+ /*************************基本通用样式结束*************************/
+
+ /***********************页眉页脚通用样式开始***********************/
+ header,footer{
+ 	width: 100%;				/*占满*/
+ 	position: relative; /*子元素实现绝对定位*/
+ }
+ /*分别设置页眉和页脚的高度*/
+ header{
+ 	height: 9%;
+ }
+ footer{
+ 	height: 6%;
+ }
+
+ header img{
+ 	height: 70%;				/*设置图标高度*/
+ 	position: absolute;	/*绝对定位*/
+ 	top: 7%;
+ 	left: 1%;
+ }
+ header h1{
+ 	/*绝对定位*/
+ 	position: absolute;
+ 	top: 20%;
+ 	left: 5%;
+ }
+ footer span{
+ 	position: absolute;          /*绝对定位*/
+ 	bottom: 3px;
+ 	/*实现水平居中*/
+ 	left: 50%;
+ 	transform: translateX(-50%); /*移动元素本身50%*/
+ }
+
+ /***********************页眉页脚通用样式结束***********************/
+
+ /*************************导航通用样式开始*************************/
+ nav{
+ 	position: absolute; /*绝对定位*/
+ 	top: 9%;
+ 	left: 1%;
+ 	display: none; 			/*默认不展开导航栏*/
+ 	z-index: 9999;			/*让导航栏显示在最上面*/
+ 	line-height: 30px;  /*增加行距*/
+ }
+ nav li:hover{
+ 	background-color: #acdbc9; /*设置鼠标滑过的颜色*/
+ }
+ nav .second a{
+ 	/*二级导航字体减小，且靠右一些*/
+ 	font-size: 16px;
+ 	padding-left: 20px;
+ }
+ /*当前选中的子导航字体加粗，且有下划线,鼠标滑过时无背景颜色*/
+ nav .chosen{
+ 	font-weight: bold;
+ 	text-decoration: underline;
+ }
+ nav .chosen:hover{
+ 	background-color: transparent;
+ }
+ /*************************导航通用样式结束*************************/
+
+
+/************************主体内容通用样式开始***********************/
+ /*关于我部分的四个页面背景颜色都相同，将其作为通用样式*/
+ .about{
+ 	background-color: #9bd3b2;
+ }
+ /*主体内容布局类似*/
+ .main{
+ 	height: 85%;    /*设置高度*/
+ 	margin: 0 auto; /*水平居中*/
+ }
+ .main img{
+ 	height: 70%;    /*设置标题图片大小*/
+ }
+ .main h2{
+ 	margin-left: 3px;  /*标题与图片之间增加距离*/
+ }
+ .main .title{
+ 	/*设置大小*/
+ 	height: 10%;
+ 	width: 100%;
+ 	/*flex布局，水平和垂直方向均居中*/
+ 	display: flex;
+ 	justify-content: center;
+ 	align-items:center;
+ }
+ .title div{
+ 	height: 3px;
+ 	background-color: #3dc3b1;
+ }
+ /***********************主体内容通用样式结束***********************/

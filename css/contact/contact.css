@@ -1,0 +1,126 @@
+@charset "UTF-8";
+/**
+ *
+ * @author      Zoey Huang
+ * @date        2020-06-04 13:52:00
+ * @description contact.html的样式
+ */
+
+ /***********************页眉页脚样式开始***********************/
+ header,footer{
+ 	background-color: #ffbeba;   /*设置与通用样式中不同的背景颜色*/
+ }
+ /***********************页眉页脚样式结束***********************/
+
+ /*************************导航样式开始*************************/
+ nav li:hover{
+ 	background-color: #ffcad4;  /*设置与通用样式中不同的背景颜色*/
+ }
+ /*************************导航样式结束*************************/
+
+
+ /***********************主体内容样式开始***********************/
+ #contact{
+ 	width: 60%;                /*设置宽度*/
+ 	padding: 0 20%;						 /*padding值由width值决定，是为了让背景颜色充满屏幕*/
+ 	background-color: #ffbeba; /*设置与通用样式中不同的背景颜色*/
+ }
+ /*标题样式*/
+ #contact .contact-title div{
+ 	height: 3px;
+ 	width: 40%;
+ 	background-color: #ef959d;
+ }
+ /*内容样式*/
+ #contact .contact-content{
+ 	width: 100%;
+ }
+ .icon {
+ 	/*为icon提供的字体图标*/
+ 	width: 30px;
+ 	height: 30px;
+ 	vertical-align: -0.15em;
+ 	fill: currentColor;
+ 	overflow: hidden;
+ }
+ /*左侧内容样式*/
+ #contact .contact-content .contact-left{
+ 	float: left;   /*靠左*/
+ 	width: 50%;
+ 	padding-left: 10px;
+ }
+ #contact .contact-content .contact-left h4{
+ 	padding: 25px 0 9px 0;
+ }
+ #contact .contact-content .contact-left i,span{
+ 	font-size: 18px;
+ }
+ #contact .contact-content .contact-left .other-contact{
+ 	width: 55%;
+ 	margin-top: 30px;
+ 	/*flex布局，两端对齐*/
+ 	display: flex;
+ 	justify-content:space-between;
+ }
+ /*右侧内容样式*/
+ #contact .contact-content .contact-right{
+ 	float: right;
+ 	padding-right: 20px;
+ }
+ #contact .contact-content .contact-right form{
+ 	height: 400px;
+ 	margin-top: 20px;
+ 	/*flex布局，纵向排列，两端对齐*/
+ 	display: flex;
+ 	flex-flow: column nowrap;
+ 	justify-content:space-between;
+ }
+ #contact .contact-content .contact-right form div{
+ 	width: 300px;
+ 	border-radius:10px;       /*设置输入框的圆角的大小*/
+ 	border:1px solid #ef959d; /*设置输入框边框的粗细和颜色*/
+ }
+ #contact .contact-content .contact-right form div label{
+ 	display: block;    /*设置为block使其独占一行*/
+ 	color: #e67b79;
+ 	font-size: 18px;
+ 	padding-left: 5px;
+ 	font-weight: bold;
+ }
+ #contact .contact-content .contact-right form input,
+ #contact .contact-content .contact-right form textarea,
+ #contact .contact-content .contact-right form select{
+ 	padding-left: 5px;
+ 	height: 30px;
+ 	width: 99%;
+ 	font-family: 华康娃娃体; /*需要指明字体进行样式覆盖*/
+ 	color: #f0f5ee;					/*设置输入框中文字的颜色*/
+ 	font-size: 18px;
+ 	/*去除激活边框*/
+ 	outline: none;
+ 	border: none;
+ 	background: transparent;
+ }
+ #contact .contact-content .contact-right form input::-webkit-input-placeholder,
+ #contact .contact-content .contact-right form textarea::-webkit-input-placeholder{ 
+ 	/* WebKit browsers，设置输入框提示文字的颜色 */
+ 	color: #e8e9e7;
+ }
+ #contact .contact-content .contact-right form select option{
+ 	background-color: #ffbeba;
+ }
+ #contact .contact-content .contact-right form textarea{
+ 	height: 100px;
+ 	/*去除右下角的小三角形，使其不能调整大小*/
+ 	resize:none;
+ }
+ #contact .contact-content .contact-right form textarea::-webkit-scrollbar {
+ 	/*清除textarea滚动条，但上下滑动鼠标仍能滚动*/
+ 	display: none;
+ }
+ #contact .contact-content .contact-right form .button{
+ 	background-color: #ef959d;
+ 	border-radius:10px;
+ 	font-weight: bold;
+ }
+ /***********************主体内容样式结束***********************/

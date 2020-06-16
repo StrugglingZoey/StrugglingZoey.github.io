@@ -1,0 +1,43 @@
+@charset "UTF-8";
+/**
+ *
+ * @author      Zoey Huang
+ * @date        2020-06-04 13:58:02
+ * @description interest.html的样式
+ */
+
+ /*************************主体内容样式开始*************************/
+ #interest{
+ 	width: 70%;     /*设置宽度*/
+ 	padding: 0 15%; /*padding值由width值决定，是为了让背景颜色充满屏幕*/
+ }
+ /*标题样式*/
+ #interest .interest-title div{
+ 	width: 38%;
+ }
+
+ /*内容样式*/
+ #interest .interest-content{
+ 	width: 100%;						 /*占满*/
+ 	margin-top: 20px;				 /*与标题之间的间距*/
+ 	display: flex;					 /*flex布局*/
+ 	flex-flow: row wrap;		 /*横向排列，换行*/
+ 	justify-content: center; /*居中对齐*/
+ }
+ #interest .interest-content div{
+ 	width: 33%;				/*设置宽度为父元素的三分之一，方便换行*/
+ 	margin-top: 15px; /*增加不同行元素的间距*/
+ }
+ #interest .interest-content div img{
+ 	width: 80%;
+ 	height: 65%;
+ 	padding-left: 10%;
+ }
+ #interest .interest-content div h3{
+ 	padding-top: 10px;
+ }
+ #interest .interest-content div h3,p{
+ 	text-align: center;  /*居中对齐*/
+ 	line-height: 20px;
+ }
+ /*************************主体内容样式结束*************************/

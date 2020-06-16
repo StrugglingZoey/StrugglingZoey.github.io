@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <!-- 网站标题 -->
+  <title>幸会 - 黄栩的个人网站</title>
+	<!-- 网站logo -->
+	<link rel="shortcut icon" type="image/x-icon" href="../img/favicon.ico">
+  <!-- 引入css -->
+  <!-- 通用css -->
+	<link href="../css/universal.css" rel="stylesheet">
+	<!-- 本页面css -->
+  <link href="../css/about/skill.css" rel="stylesheet">
+</head>
+<body>
+  <!-- 页眉区 -->
+	<header class="about">
+    <!-- 菜单栏按钮 -->
+    <img src="../img/nav.png" alt="菜单按钮">
+    <!-- 网页标题 -->
+    <h1>幸会</h1>
+  </header>
+  <!-- 页眉区结束 -->
+
+  <!-- 导航区，由li标签构成，导航区可以下拉或收起，通过点击页眉区的菜单栏按钮实现 -->
+  <nav>
+    <ul>
+      <!-- 一级导航 -->
+      <li class="first">
+        <a href="../index.html">
+          <span>首页</span>
+        </a>
+      </li>
+      <li class="first">
+        <a href="./main.html">
+          <span>关于我</span>
+        </a>
+        <!-- 二级导航 -->
+        <li class="second">
+          <a href="./interest.html">兴趣爱好</a>
+        </li>
+        <li class="second chosen">
+          <a href="#">专业技能</a>
+        </li>
+        <li class="second">
+          <a href="./university.html">我的大学</a>
+        </li>
+      </li>
+      <li class="first">
+        <a href="../know/myself.html">
+          <span>认识我</span>
+        </a>
+      </li>
+      <li class="first">
+        <a href="../contact/contact.html">
+          <span>联系我</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <!-- 导航区结束 -->
+
+  <!-- 主体内容区，由标题和内容两部分组成，居中 -->
+  <div id="skill" class="about main">
+    <!-- 标题部分 -->
+  	<section class="skill-title title">
+      <!-- 两个空div是为了显示标题两侧的线条 -->
+      <div></div>
+      <!-- 标题图标 -->
+      <img src="../img/about/skill.png" alt="skill">
+      <!-- 标题 -->
+      <h2>专业技能</h2>
+      <div></div>
+    </section>
+    <!-- 标题部分结束 -->
+    <!-- 内容部分，由左右两部分组成，左侧为技能，右侧为作品 -->
+    <section class="skill-content">
+      <!-- 技能部分 -->
+      <div class="skill-do">
+        <!-- 技能标题 -->
+        <h3>I Can:</h3>
+        <!-- li展示技能 -->
+        <ul>
+          <li>
+            <h4>平面设计</h4>
+            <p>能熟练使用Photoshop、Lightroom、Illustrator等平面设计软件，有海报设计和UI设计的经验</p>
+          </li>
+          <li>
+            <h4>前端开发</h4>
+            <p>熟悉Html、Css、JavaScript，有Vue.js的开发经验</p>
+          </li>
+          <li>
+            <h4>数据分析</h4>
+            <p>擅长Excel、SPSS、Eviews等数据分析软件的操作，并能够使用Python和R完成数据分析</p>
+          </li>
+          <li>
+            <h4>英语</h4>
+            <p>成功通过英语四级（578）和六级（552）</p>
+          </li>
+          <li>
+            <h4>项目管理</h4>
+            <p>通过计算机技术与软件专业技术资格（水平）考试，获得系统集成项目管理工程师证书</p>
+          </li>
+        </ul>
+      </div>
+      <!-- 技能部分结束 -->
+      <!-- 作品部分 -->
+      <div class="skill-work">
+        <!-- 作品标题 -->
+        <h3>My Work:</h3>
+        <!-- li展示作品 -->
+        <ul>
+          <li>
+            <h4>平面设计</h4>
+            <img src="../img/about/xixian.png" alt="希贤好故事">
+            <img src="../img/about/2019.jpg" alt="2019">
+          </li>
+          <li>
+            <h4>前端开发</h4>
+            <a href="http://121.41.116.243:8080/bicyclePlan/" target="_blank">·慧park——共享单车规划</a>
+            <a href="http://wolaiguo.shangdaocc.com/" target="_blank">·我来过——死者生平</a>
+          </li>
+        </ul>
+      </div>
+      <!-- 作品部分结束 -->
+    </section>
+    <!-- 内容部分结束 -->
+  </div>
+  <!-- 主体内容区结束 -->
+
+  <!-- 页脚区，书写版权信息等 -->
+  <footer class="about">
+    <span>@Copyright 2020 Zoey Huang. All Rights Reserved.</span>
+	</footer>
+  <!-- 页脚区结束 -->
+
+  <!-- 引入js，实现导航栏的展开与收起 -->
+  <script type="text/javascript" src="../js/nav.js"></script>
+</body>
+</html>

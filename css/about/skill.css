@@ -1,0 +1,53 @@
+@charset "UTF-8";
+/**
+ *
+ * @author      Zoey Huang
+ * @date        2020-06-04 13:58:12
+ * @description skill.html的样式
+ */
+
+/*************************主体内容样式开始*************************/
+ #skill{
+ 	width: 80%;			/*设置宽度*/
+ 	padding: 0 10%; /*padding值由width值决定，是为了让背景颜色充满屏幕*/
+ }
+ /*标题样式*/
+ #skill .skill-title div{
+	width: 40%;
+}
+/*内容样式*/
+ #skill .skill-content li{
+ 	list-style-type: square;   /*li标签的标记序号*/
+ 	color: #299d90;
+ 	margin: 15px 20px;
+ }
+ #skill .skill-content li a,
+ #skill .skill-content li p{
+ 	font-size: 18px;
+ 	line-height: 20px;
+ }
+/*左侧内容样式*/
+ #skill .skill-content .skill-do{
+ 	float: left;										  /*靠左*/
+ 	width: 40%;
+ 	margin: 20px 0 0 25px;
+ 	padding-right: 20px;
+ 	border-right: 1px dashed #3dc3b1; /*右侧边框，分隔作用*/
+ }
+ /*右侧内容样式*/
+ #skill .skill-content .skill-work{
+ 	float: right;
+ 	margin-top: 20px;
+ 	width: 52%;
+ }
+ #skill .skill-content .skill-work h4{
+ 	padding:15px 0;
+ }
+ #skill .skill-content .skill-work img{
+ 	width: 46%;
+ }
+ #skill .skill-content .skill-work a{
+ 	display: block;
+ 	padding-bottom: 10px;
+ }
+ /*************************主体内容样式结束*************************/

@@ -1,0 +1,73 @@
+@charset "UTF-8";
+/**
+ *
+ * @author      Zoey Huang
+ * @date        2020-06-04 13:53:59
+ * @description myself.html的样式
+ */
+/***********************页眉页脚样式开始***********************/
+header,footer{
+	background-color: #f9da94;   /*设置与通用样式中不同的背景颜色*/
+}
+/***********************页眉页脚样式结束***********************/
+
+/*************************导航样式开始*************************/
+nav li:hover{
+	background-color: #fbe4b0;  /*设置与通用样式中不同的背景颜色*/
+}
+/*************************导航样式结束*************************/
+
+/***********************主题内容样式开始***********************/
+#myself{
+	width: 70%;                /*设置宽度*/
+	padding: 0 15%;						 /*padding值由width值决定，是为了让背景颜色充满屏幕*/
+	background-color: #f9da94; /*设置与通用样式中不同的背景颜色*/
+}
+/*标题样式*/
+#myself .myself-title div{
+	width: 42%;
+	background-color: #febc49; /*设置与通用样式中不同的背景颜色*/
+}
+/*内容样式*/
+#myself .myself-content{
+	width: 100%;
+}
+/*左侧内容样式*/
+#myself .myself-photo{
+	margin-top: 60px;
+	width: 30%;
+	float: left; /*靠左*/
+}
+#myself .myself-photo .photo-border{
+	background-color: #febc49;
+}
+#myself .myself-photo img{
+	width: 85%;
+	transform: translate(50px,20px); /*图片相对原来位置移动*/
+}
+/*右侧内容样式*/
+#myself .myself-information{
+	float: right;
+	width: 65%;
+}
+#myself .myself-information table{
+	margin:70px 0 0 40px;
+	border: 0;   /*默认不显示边框*/
+}
+#myself .myself-information table td{
+	height: 50px;
+	border-bottom: 1px dashed #febc49; /*设置下边框以分隔行*/
+}
+#myself .myself-information table td span{
+	font-size: 20px;
+}
+#myself .myself-information table td .description-name{
+	color: #f9a825;
+	font-weight: bold;
+}
+#myself .myself-information table .last{
+	border: none;    /*最后一行无需下边框*/
+	padding-top: 20px;
+	line-height: 25px;
+}
+/***********************主题内容样式结束***********************/
